@@ -29,7 +29,7 @@ Este projeto tem como objetivo fornecer uma interface simples e intuitiva para c
 
 ## Imagem do Projeto 📷
 
-[Screenshot do Projeto](assets/screenShot.png)
+![Screenshot do Projeto](assets/screenShot.png)
 
 ---
 
