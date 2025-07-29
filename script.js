@@ -24,8 +24,8 @@ async function getWeatherData(city) {
 function renderWeatherData(weatherData) {
     weatherResult.classList.remove('hidden')
     weatherResult.innerHTML = `
-        <h2 id="city-name">${weatherData.location.name}</h2>
-            <p id="local-time" class="local-time">${weatherData.location.localtime}</p>
+        <h2 id="city-name">${weatherData.location.name}, ${weatherData.location.region} (${weatherData.location.country})</h2>
+            <p id="local-time" class="local-time">Horário local: ${weatherData.location.localtime}</p>
 
             <div class="weather-main">
                 <img id="weather-icon" src="${weatherData.current.condition.icon}" alt="Ícone do tempo">
