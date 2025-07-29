@@ -104,6 +104,7 @@ body {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid #ddd;
 }
 
 .detail-item {
@@ -126,4 +127,66 @@ body {
 /* Classes de Controle */
 .hidden {
     display: none;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .weather-card {
+        padding: 15px;
+        border-radius: 12px;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .weather-card h1 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #city-input,
+    #search-btn {
+        font-size: 0.95em;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .weather-main {
+        flex-direction: column;
+        gap: 8px;
+        margin: 10px 0;
+    }
+
+    #weather-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    #temperature {
+        font-size: 2.2em;
+    }
+
+    .weather-details {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .detail-item span {
+        font-size: 0.75em;
+    }
+
+    .detail-item strong {
+        font-size: 1em;
+    }
 }
