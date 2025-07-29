@@ -1,0 +1,129 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o body ocupe a tela toda */
+    padding: 20px 0;
+    margin: 0;
+    color: #333;
+}
+
+/* Cartão Principal */
+.weather-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+.weather-card h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #1a73e8;
+}
+
+/* Container de Busca */
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+#search-btn {
+    padding: 12px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #155ab6;
+}
+
+/* Resultados do Tempo */
+#weather-result h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px; /* Reduz a margem */
+}
+
+/* NOVO: Estilo para a hora local */
+.local-time {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.weather-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+#temperature {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+#condition {
+    font-size: 1.2em;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+/* ATUALIZADO: Usando Grid para melhor alinhamento */
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.detail-item span {
+    font-size: 0.85em;
+    color: #555;
+}
+
+.detail-item strong {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+/* Classes de Controle */
+.hidden {
+    display: none;
+}
