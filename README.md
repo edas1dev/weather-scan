@@ -27,9 +27,11 @@ Este projeto tem como objetivo fornecer uma interface simples e intuitiva para c
 
 ---
 
-## Imagem do Projeto 📷
+<h1 align="center">Imagem do Projeto 📷</h1>
 
-![Screenshot do Projeto](assets/screenShot.png)
+<p align="center">
+  <img src="assets/screenShot.png" alt="Screen Shot do projeto."/>
+</p>
 
 ---
 
